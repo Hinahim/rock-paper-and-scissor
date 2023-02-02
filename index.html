@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock, paper and scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="first-container">
+        <div class="list-container">
+            <ul id="lst">
+                <li> Rock</li>
+                <li> Paper</li>
+                <li> Scissors</li>
+            </ul>
+        </div>
+        <div class="score-container">
+            <h3>Your Score</h3>
+            <h2 id="score"> 0</h2>
+        </div>
+
+    </div>
+    <div class="secondcontainer">
+        <button type="button" id="btn-selected" class="btn-style scissor-style" data-choice="scissor"> <img
+                src="scissor.png" class="img-style"></button>
+        <div class="top-line"></div>
+        <button type="button" id="btn-selected" class="btn-style rock-style" data-choice="rock"> <img src="rock.png"
+                class="img-style"></button>
+        <div class="bottom-line-right"></div>
+        <div class="bottom-line-left"></div>
+        <button type="button" id="btn-selected" class="btn-style paper-style position" data-choice="paper"> <img
+                src="paper.png" class="img-style"></button>
+
+    </div>
+    <button type="reset" class="play-again" onclick="calc()">PLAY AGAIN</button>
+    <div class="add"></div>
+    <div class="popup">
+        <h1 id="gr"> Game Rules</h1>
+        <ul>
+            <li>
+                Rock beats scissors, scissors beat paper, and paper beats rock.
+            </li>
+            <li> Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                scissors."</li>
+            <li> Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li> If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+        <div class="popup-close-btn">&times;</div>
+    </div>
+    <div class="rules"><button id="open-popup-btn" type="button"> RULES </button></div>
+
+    <div class="add"></div>
+    <div class="tryagain"></div>
+    <script src="logic.js" charset="UTF-8"></script>
+</body>
+
+</html>
